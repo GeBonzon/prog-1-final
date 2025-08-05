@@ -478,7 +478,7 @@ footer a:hover {
 }
 
 /* banner */
-.banner-promocional {
+/* .banner-promocional {
     background-image: url('../images/banner/bg-banner-2.png');
     background-size: cover;
     background-position: center;
@@ -495,7 +495,6 @@ footer a:hover {
     background-color: rgba(255, 255, 255, 0.92);
     display: flex;
     flex-direction: row;
-    /* ⬅️ esto organiza en fila */
     justify-content: space-between;
     align-items: center;
     padding: 20px 30px;
@@ -503,7 +502,6 @@ footer a:hover {
     max-width: 100%;
     width: 100%;
     max-width: 760px;
-    /* podés ajustar esto */
     gap: 30px;
 }
 
@@ -528,6 +526,98 @@ footer a:hover {
     border-radius: 8px;
     cursor: pointer;
     white-space: nowrap;
+} */
+
+.banner-promocional {
+    position: fixed;
+    width: 600px;
+    height: 300px;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffcc00;
+    color: #000;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.banner-promocional .contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 50%;
+}
+
+.banner-promocional .contenido h2 {
+    font-size: 1.8rem;
+    margin: 0 0 0.5rem 0;
+    color: #553694;
+}
+
+.banner-promocional .contenido p {
+    font-size: 1rem;
+    margin: 0 0 0.5rem 0;
+    color: #343a40;
+}
+
+.btn-banner-accion {
+    background-color: #7984f8;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    align-self: flex-start;
+    margin-top: 1rem;
+}
+
+.banner-promocional .boton-cerrar {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    cursor: pointer;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: none;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.banner-promocional .boton-cerrar:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.btn-banner-accion:hover {
+    background-color: #553694;
+}
+
+.banner-fondo-manga {
+    background-image: url('../images/banner/banner-fondo-manga.jpg');
+}
+
+.banner-fondo-descuentos {
+    background-image: url('../images/banner/banner-fondo-descuentos.jpg');
+}
+
+.banner-fondo-ultimas {
+    background-image: url('../images/banner/banner-fondo-ultimas.jpg');
 }
 
 /* avisos stock */

@@ -183,18 +183,21 @@ const mensajes = [
     descripcion: "Dejá que el destino decida por vos.",
     textoBoton: "Sorprendeme",
     clickBoton: () => clickBanner('manga'),
+    claseFondo: "banner-fondo-manga"
   },
   {
     tituloBanner: "Ofertas por tiempo limitado",
     descripcion: "¡Descuentos imperdibles en tus mangas favoritos!",
     textoBoton: "Ver ofertas",
     clickBoton: () => clickBanner('descuentos'),
+    claseFondo: "banner-fondo-descuentos"
   },
   {
     tituloBanner: "¿Te lo vas a perder?",
     descripcion: "Estos mangas están por agotarse. ¡Apurate!",
     textoBoton: "Ver mangas",
     clickBoton: () => clickBanner('ultimasUnidades'),
+    claseFondo: "banner-fondo-ultimas"
   }
 ];
 
@@ -224,6 +227,19 @@ function mostrarBannerPromocional() {
   const banner = document.createElement('section');
   banner.classList.add('banner-promocional');
 
+  if (random.claseFondo) {
+    banner.classList.add(random.claseFondo);
+  }
+
+  const btnCerrar = document.createElement('span');
+  btnCerrar.className = 'boton-cerrar';
+  btnCerrar.textContent = '×';
+  btnCerrar.onclick = () => {
+    banner.remove();
+    bannerActual = null;
+  };
+  banner.appendChild(btnCerrar);
+
   const contenedorTexto = document.createElement('div');
   contenedorTexto.classList.add('contenido');
 
@@ -237,17 +253,15 @@ function mostrarBannerPromocional() {
 
   const botonAccion = crearBoton(random.textoBoton, 'btn-banner-accion', () => {
   random.clickBoton();
+  banner.remove();
+  bannerActual = null;
+  clearTimeout(banner.timeoutId);
   });
 
   contenedorTexto.appendChild(botonAccion);
   banner.appendChild(contenedorTexto);
 
-  const main = document.querySelector('main');
-  if (main) {
-    main.insertBefore(banner, main.firstChild);
-  } else {
-    document.body.appendChild(banner);
-  }
+  document.body.appendChild(banner);
 
   bannerActual = banner;
 
@@ -256,12 +270,6 @@ function mostrarBannerPromocional() {
     bannerActual = null;
   }, 10000);
 }
-
-document.querySelectorAll('.categoria').forEach(categoria => {
-  categoria.addEventListener('click', () => {
-    mostrarBannerPromocional();
-  });
-});
 
 
   
