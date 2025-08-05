@@ -1,0 +1,729 @@
+body
+.card-img-top {
+    width: 100%;
+    height: 100%;
+}
+
+#btnAbrirCarrito {
+    font-size: 1.3rem;
+    position: relative;
+}
+
+#carritoCantidad {
+    top: 20%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    font-size: 0.75rem;
+    padding: 0.25em 0.4em;
+    position: absolute;
+}
+
+.navbar {
+    background: linear-gradient(90deg, rgba(111, 66, 193, 0.77) 0%, rgba(220, 205, 247, 1) 100%);
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+    font-family: 'Train One', sans-serif;
+    font-size: 2rem;    
+}
+
+.form-label {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-weight: bold;
+}
+
+#carritoCantidad {
+    background-color: #b108d3;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 100%;
+}
+
+.btn-vaciar {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-vaciar:hover {
+    background-color: #a71d2a;
+}
+
+body {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    background: linear-gradient(0deg, rgb(243, 203, 220) 0%, rgb(224, 234, 245) 100%);
+    color: #343a40;
+}
+
+.card {
+    border-radius: 20px;
+    border-color: #e391f3;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    min-height: 4rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.btn-compra {
+    background-color: #7984f8;
+    color: #fff;
+    border: none;
+    margin-top: auto; 
+}       
+
+.btn-compra:hover {
+    background-color: #7d3af8;
+    color: #fff;
+}
+
+.btn-finalizar {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-finalizar:hover {
+    background-color: #218838;
+}
+
+.btn-detalle {
+    background-color: none;
+    color: #2e2e2e;
+    border: white 1px solid;
+}
+
+.btn-detalle:hover {
+    background-color: none;
+    color: #000;
+    border: #7d3af8 1px solid;
+}
+
+#limpiarFiltros {
+    color: rgb(32, 32, 32);
+    border: 1px solid #aadef7;
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.form-select {
+    width: 100%;
+    border-radius: 4px;
+    border: 2px solid #d0bbf8;
+    font-size: 1rem;
+}
+
+#limpiarFiltros:hover {
+    background-color: #aadef7;
+    color: rgb(12, 5, 218);
+    border: #fca1e5 1px solid;
+}
+
+.card-img-top {
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.precio{
+    font-size: 1.5rem;
+    min-height: 2rem;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal.visible {
+    display: flex;
+}
+
+.modal-contenido {
+    background-color: #fff;
+    padding: 1.2rem 1.5rem;
+    border-radius: 8px;
+    max-width: 700px;
+    width: 90%;
+    max-height: 85vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 0.2s ease;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+#lista-carrito {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+#lista-carrito li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.7rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+.miniatura-carrito {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+
+.info-carrito {
+    flex: 1;
+}
+
+
+.controles-carrito button {
+    min-width: 2rem;
+    padding: 0.3rem;
+}
+
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-left: 0.3rem;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button.eliminar {
+    background-color: #dc3545;
+}
+
+button.eliminar:hover {
+    background-color: #a71d2a;
+}
+
+
+.resumen-carrito {
+    margin-top: 1rem;
+}
+
+.resumen-carrito p {
+    font-size: 1.4rem;
+}
+
+.acciones-carrito {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+
+.detalle-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.detalle-info {
+    flex: 1;
+}
+
+.contenedor-galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contenedor-galeria .detalle-imagen {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor-galeria .contenedor-miniaturas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.contenedor-galeria .miniatura {
+    width: 60px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    border: 2px solid transparent;
+}
+
+.contenedor-galeria .miniatura:hover {
+    transform: scale(1.05);
+    opacity: 1;
+    border-color: #7984f8;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btnVolverProductos {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+
+footer {
+    background: linear-gradient(0deg, rgba(111, 66, 193, 0.77) 0%, rgb(186, 151, 250) 100%);
+    color: #f1f1f1;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer a {
+    color: #05f8e0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* fomualrio */
+
+.form-checkout {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.form-checkout label {
+    font-weight: bold;
+    color: #343a40;
+}
+
+.form-checkout input,
+.form-checkout select {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 2px solid #d0bbf8;
+    font-size: 1rem;
+}
+
+.form-checkout input:focus,
+.form-checkout select:focus {
+    outline: none;
+    border-color: #7984f8;
+    box-shadow: 0 0 0 2px rgba(121, 132, 248, 0.3);
+}
+
+#erroresFormulario {
+    font-size: 0.9rem;
+    color: red;
+    margin-top: -0.5rem;
+}
+
+.form-checkout .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+.form-checkout  .form-campo input.input-error,
+.form-checkout  .form-campo select.input-error {
+    border: 2px solid red !important;
+    background-color: #ffe6e6 !important;
+    box-shadow: 0 0 5px red !important;
+}
+
+.form-checkout .form-campo .mensaje-error {
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+    display: none;
+}
+
+.mensaje-alerta {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #dc3545;
+    color: white;
+    padding: 0.75rem 1.2rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    opacity: 0;
+    animation: fadeInOut 3s forwards;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.modal-confirmacion {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+    z-index: 1001;
+    width: 90%;
+    max-width: 400px;
+}
+
+.fondo-confirmacion {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+/* banner */
+.banner-promocional {
+    background-image: url('../images/banner/bg-banner-2.png');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    padding: 0 40px;
+}
+
+.banner-promocional .contenido {
+    background-color: rgba(255, 255, 255, 0.92);
+    display: flex;
+    flex-direction: row;
+    /* ⬅️ esto organiza en fila */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border-radius: 12px;
+    max-width: 100%;
+    width: 100%;
+    max-width: 760px;
+    /* podés ajustar esto */
+    gap: 30px;
+}
+
+.banner-promocional .contenido h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #000;
+}
+
+.banner-promocional .contenido p {
+    margin: 10px 0 0;
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.banner-promocional .btn-banner-accion {
+    padding: 12px 18px;
+    font-size: 1.4rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* avisos stock */
+
+.card.sin-stock {
+    opacity: 0.5;
+    pointer-events: none;
+    position: relative;
+}
+
+.etiqueta-sin-stock {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    background-color: red;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.etiqueta-descuento {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e63946;
+    /* rojo fuerte */
+    color: white;
+    font-weight: bold;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    z-index: 10;
+}
+
+/* detalles modal */
+
+.precio-normal {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.precio-tachado {
+    text-decoration: line-through;
+    margin-right: 0.5rem;
+    color: #28a745;
+}
+
+.precio-descuento {
+    color: red;
+    font-weight: bold;
+}
+
+.texto-promocional {
+    color: red;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.sin-stock-text {
+    color: red;
+    font-weight: bold;
+}
+
+.aviso-stock-bajo {
+    color: orange;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+/* formulario */
+
+/* Modal general (fondo semitransparente y centrado) */
+#modalCheckout.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1500;
+}
+
+#modalCheckout.modal.visible {
+    display: flex;
+}
+
+/* Contenedor del contenido modal */
+#modalCheckout .modal-content {
+    background: white;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 85vh;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    animation: fadeIn 0.3s ease forwards;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+/* Animación */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Título del modal */
+#modalCheckout h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #553694;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+/* Campos del formulario */
+.form-campo {
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 1rem; */
+}
+
+.form-campo label {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: #4D3D71;
+}
+
+.form-campo input,
+.form-campo select {
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    border: 2px solid #d0bbf8;
+    border-radius: 6px;
+    transition: border-color 0.2s ease;
+}
+
+.form-campo input:focus,
+.form-campo select:focus {
+    outline: none;
+    border-color: #553694;
+    box-shadow: 0 0 6px rgba(85, 54, 148, 0.5);
+}
+
+/* Botones del formulario */
+.form-botones {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.form-botones button {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+    min-width: 120px;
+}
+
+.form-botones button[type="button"] {
+    background-color: #dc3545;
+    color: white;
+}
+
+.form-botones button[type="button"]:hover {
+    background-color: #a71d2a;
+}
+
+.form-botones button[type="submit"] {
+    background-color: #7984f8;
+    color: white;
+}
+
+.form-botones button[type="submit"]:hover {
+    background-color: #553694;
+}
+
+#contenedor-cuotas {
+    margin-top: 1rem;
+}
+
+
