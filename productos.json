@@ -557,7 +557,7 @@
   {
     "id": 32,
     "nombre": "Cardacaptor Sakura: Edición Deluxe - 01",
-    "descripcion": "",
+    "descripcion": "Una niña descubre un misterioso libro mágico y queda encargada de recuperar unas cartas poderosas que se desataron por accidente.",
     "precio": 18500,
     "portada": "images/manga/clamp/portada/cardcaptor-sakura-01.jpg",
     "categoria": "Shojo",
@@ -575,7 +575,7 @@
   {
     "id": 33,
     "nombre": "HAIKYU!! - 01",
-    "descripcion": "",
+    "descripcion": "Un joven decidido a convertirse en un gran jugador de vóley lucha por brillar en la cancha, pese a su baja estatura y los desafíos del equipo.",
     "precio": 10500,
     "portada": "images/manga/haruichi-furudate/portada/haikyu-01.jpg",
     "categoria": "Shonen",
@@ -593,7 +593,7 @@
   {
     "id": 34,
     "nombre": "Tokyo Girls II - 04",
-    "descripcion": "",
+    "descripcion": "Tres amigas enfrentan la vida adulta en Tokio entre desamores, trabajos frustrantes y la presión de cumplir con las expectativas sociales.",
     "precio": 10500,
     "portada": "images/manga/akiko-higashimura/portada/tokyo-girls-ii-04.webp",
     "categoria": "Josei",
@@ -611,7 +611,7 @@
   {
     "id": 35,
     "nombre": "One Piece - 01",
-    "descripcion": "",
+    "descripcion": "Un joven pirata parte en busca del tesoro legendario, reuniendo una tripulación única para conquistar los mares y cumplir su sueño.",
     "precio": 10500,
     "portada": "images/manga/eiichiro-oda/portada/one-piece-01.jpg",
     "categoria": "Shonen",
